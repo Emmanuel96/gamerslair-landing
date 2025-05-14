@@ -2618,3 +2618,62 @@ ol {
   text-fill-color: transparent;
   letter-spacing: 1px;
 }
+
+/* ===== Custom Mobile Fixes for Navbar & Hero Section ===== */
+@media (max-width: 767px) {
+  /* Navbar: stack logo and hamburger vertically */
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .navbar-brand img {
+    max-width: 80px;
+    margin-bottom: 4px;
+  }
+  .mobile-menu-btn {
+    margin: 0 auto 8px auto;
+    display: block;
+  }
+  /* Navbar menu: full width, padding, less overlap */
+  .navbar-collapse.sub-menu-bar {
+    width: 95vw;
+    left: 2.5vw;
+    right: 2.5vw;
+    top: 60px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 24px 0 16px 0;
+    background: #fff;
+    z-index: 1000;
+  }
+  .navbar-nav {
+    width: 100%;
+    text-align: left;
+  }
+  .navbar-nav .nav-item {
+    margin: 12px 0;
+  }
+  /* Add spacing below navbar so hero text isn't blocked */
+  .hero-area {
+    margin-top: 32px;
+  }
+  /* Center hero buttons and images */
+  .hero-area .hero-content .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-area .hero-image {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .hero-area .hero-image img {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
