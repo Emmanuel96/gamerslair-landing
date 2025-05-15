@@ -1659,7 +1659,7 @@ ol {
 @media (max-width: 767px) {
   .hero-area {
     margin-top: 0;
-    padding-top: 120px;
+    padding-top: 180px;
   }
   .hero-area .hero-image {
     flex-direction: row;
@@ -1858,13 +1858,15 @@ ol {
     text-align: center;
   }
   .hero-area .hero-content h1 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
   .hero-area .hero-content p {
-    margin-top: 15px;
+    margin-top: 8px;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
   }
   .hero-area .hero-content .button .btn {
     width: 60%;
@@ -2650,7 +2652,7 @@ ol {
     margin-bottom: 4px;
   }
   .mobile-menu-btn {
-    margin: 0 auto 8px auto;
+    margin: 0 0 0 12px;
     display: block;
   }
   /* Navbar menu: full width, padding, less overlap */
@@ -2674,7 +2676,8 @@ ol {
   }
   /* Add spacing below navbar so hero text isn't blocked */
   .hero-area {
-    margin-top: 32px;
+    margin-top: 0;
+    padding-top: 180px;
   }
   /* Center hero buttons and images */
   .hero-area .hero-content .button {
@@ -2691,5 +2694,38 @@ ol {
   .hero-area .hero-image img {
     max-width: 80vw;
     margin: 0 auto;
+  }
+  /* Make header a fixed height and reduce vertical space */
+  .header {
+    min-height: 90px;
+    height: 90px;
+    padding: 10px 0 !important;
+  }
+  .navbar-brand {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+  }
+  .navbar-brand img {
+    max-width: 60px;
+    margin-bottom: 0;
+  }
+  /* Increase hero-area top padding so heading is always visible */
+  .hero-area {
+    margin-top: 0;
+    padding-top: 180px;
+  }
+  .hero-area .hero-content h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .hero-area .hero-content p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
